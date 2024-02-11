@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+
+	background-color: #333;
+	color: wheat;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+	display: flex;
+	color: wheat;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 48px;
+	padding: 30px;
+	background-color: #272727;
+
+	font-weight: 500;
+}
+
+img {
+	width: 120px;
+}
+.users-table {
+	padding: 60px;
+	float: left;
+	width: 60%;
+
+	gap: 90px;
+}
+.users-table .user {
+	margin: 50px;
+	padding: 20px;
+	background-color: #3e8fa0;
+}
+
+aside {
+	width: 20%;
+	background-color: #272727;
+	float: left;
+}
