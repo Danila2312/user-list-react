@@ -1,41 +1,18 @@
 import React from 'react'
+import User from './User'
 
 class Users extends React.Component {
-	users = [
-		{
-			id: 1,
-			firstname: 'Тимофей',
-			lastname: 'Чистяков',
-			bio: 'lor',
-			age: 11,
-			isCool: false,
-		},
-		{
-			id: 2,
-			firstname: 'Даня',
-			lastname: 'Чистяков',
-			bio: 'lor',
-			age: 20,
-			isCool: true,
-		},
-	]
-
 	render() {
-		if (this.users.length > 0)
+		if (this.props.users.length > 0)
 			return (
 				<div className='users-table'>
-					{this.users.map(el => (
-						<div className='user' key={el.id}>
-							<h2>
-								{el.firstname} {el.lastname}
-							</h2>
-
-							<p>Возраст {el.age}</p>
-
-							<p>{el.bio}</p>
-
-							<b>{el.isCool ? 'Крутой' : 'Лох'}</b>
-						</div>
+					{this.props.users.map(el => (
+						<User
+							onEdit={this.props.onEdit}
+							onDelete={this.props.onDelete}
+							key={el.id}
+							user={el}
+						/>
 					))}
 				</div>
 			)

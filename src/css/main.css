@@ -30,6 +30,8 @@ body {
 img {
 	width: 120px;
 }
+.user {
+}
 .users-table {
 	padding: 60px;
 	float: left;
@@ -47,4 +49,80 @@ aside {
 	width: 20%;
 	background-color: #272727;
 	float: left;
+}
+
+main .delete-icon {
+	float: right;
+	cursor: pointer;
+	padding-left: 20px;
+	transform: scale(1.5);
+}
+
+main .edit-icon {
+	float: right;
+	cursor: pointer;
+	transform: scale(1.5);
+}
+
+main .delete-icon:hover,
+main .edit-icon:hover {
+	opacity: 0.5;
+	transition: transform 500ms ease;
+}
+
+form {
+	padding-top: 60px;
+	background-color: #333;
+}
+
+form input:not([type='checkbox']),
+form textarea,
+form button {
+	width: 90%;
+	padding: 15px 5%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	margin-bottom: 10px;
+	background-color: #272727;
+	color: wheat;
+	outline: none;
+	font-size: 15px;
+	border: 0;
+}
+
+form input[type='checkbox'] {
+	margin: 10px;
+}
+
+form button {
+	width: 100%;
+	cursor: pointer;
+	transition: transform 500ms ease;
+}
+
+form button:hover {
+	transform: scale(1.05);
+}
+
+.user form {
+	padding-top: 20px;
+	background-color: #3e8fa0;
+}
+
+.user form input:not([type='checkbox']),
+.user form textarea {
+	width: 90%;
+	padding: 15px 5%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	margin-bottom: 10px;
+	background-color: wheat;
+	color: #272727;
+	outline: none;
+	font-size: 15px;
+	border: 0;
+}
+
+.user form button:hover {
+	transform: scale(1.02);
 }
